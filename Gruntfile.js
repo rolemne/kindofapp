@@ -3,9 +3,19 @@ module.exports = function(grunt) {
         concat : {
             files : {
                 src : [
-                    'ui-src/js/test.js'
+                    'ui-src/js/change-menu-state.js'
                 ],
                 dest : 'ui/js/main.js',
+                options : {
+                    interrupt: true,
+                    separator : '\n\n',
+                }
+            },
+            vendor : {
+                src : [
+                    'node_modules/jquery/dist/jquery.min.js'
+                ],
+                dest : 'ui/js/vendor.js',
                 options : {
                     interrupt: true,
                     separator : '\n\n',
