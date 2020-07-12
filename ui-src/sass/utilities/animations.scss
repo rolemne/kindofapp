@@ -6,3 +6,12 @@
         clip-path: inset(0 0 0 0);
     }
 }
+
+@-webkit-keyframes fade-in-right{
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}

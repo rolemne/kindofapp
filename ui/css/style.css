@@ -6,6 +6,7 @@
   background-color: white;
   font-weight: bold;
   padding: 10px 20px;
+  -webkit-tap-highlight-color: transparent;
 }
 .button-default:focus {
   outline: none;
@@ -136,10 +137,10 @@ nav {
     margin: auto 3vw;
     font-size: 3vw;
     border-radius: 10px;
-    -webkit-transition: color 0.2s linear, background-color 0.2s linear;
-    -moz-transition: color 0.2s linear, background-color 0.2s linear;
-    -o-transition: color 0.2s linear, background-color 0.2s linear;
-    transition: color 0.2s linear, background-color 0.2s linear;
+    -webkit-transition: color 200ms linear, background-color 200ms linear;
+    -moz-transition: color 200ms linear, background-color 200ms linear;
+    -o-transition: color 200ms linear, background-color 200ms linear;
+    transition: color 200ms linear, background-color 200ms linear;
   }
 }
 @media (max-width: 425px) {
@@ -226,6 +227,14 @@ nav {
 }
 
 @keyframes fade-in-right {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@-webkit-keyframes fade-in-right {
   from {
     clip-path: inset(0 100% 0 0);
   }
