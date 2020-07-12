@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    @media (min-width: 769px) {
+        display: flex;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
+}
+
+.fixed-top-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+}

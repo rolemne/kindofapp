@@ -2,6 +2,23 @@
 <html lang="en">
 
 <head>
+    <!--[if lte IE 8]>       
+    /*lte means LESS THAN & EQUAL TO IE8.*/ 
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('article');
+        document.createElement('section');
+        document.createElement('aside');
+        document.createElement('footer');
+        document.createElement('mark');
+    </script>
+    <style>
+        header, nav, article, section, aside, footer{ 
+        display:block;
+        }            
+    </style>
+    <![endif]-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="ui/css/vendor.css" />
@@ -51,6 +68,128 @@
             </div>
         </div>
     </nav>
+    <section class="quote-cards">
+        <div class="card">
+            <div class="card__component--header">
+                <div class="card__component--header-profile">
+                    <div class="card__component--header-profile-photo">
+                        <img class="img-responsive" src="ui/images/house.png" />
+                    </div>
+                    <div class="card__component--header-profile-name">John Doe</div>
+                </div>
+                <div class="card__component--header-menu">...</div>
+            </div>
+            <div class="card__component--body">
+                <div class="card__component--body-quote-mark">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <div class="card__component--body-quote-text">
+                    Whether you’re 9 or 90, stop trying to fix the things you’re bad at, and focus on the things you’re good at.
+                </div>
+                <div class="card__component--body-quote-author">
+                    Gheorghe Hagi
+                </div>
+            </div>
+            <div class="card__component--reactions-container">
+                <div class="card__component--reaction hot reaction-active">
+                    <span class="reaction">🔥</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+                <div class="card__component--reaction thumbs-up">
+                    <span class="reaction">👍</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+                <div class="card__component--reaction raising-hands">
+                    <span class="reaction">🙌</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+                <div class="card__component--reaction smile">
+                    <span class="reaction">🙂</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__component--header">
+                <div class="card__component--header-profile">
+                    <div class="card__component--header-profile-photo">
+                        <img class="img-responsive" src="ui/images/house.png" />
+                    </div>
+                    <div class="card__component--header-profile-name">John Doe</div>
+                </div>
+                <div class="card__component--header-menu">...</div>
+            </div>
+            <div class="card__component--body">
+                <div class="card__component--body-quote-mark">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <div class="card__component--body-quote-text">
+                    Whether you’re 9 or 90, stop trying to fix the things you’re bad at, and focus on the things you’re good at.
+                </div>
+                <div class="card__component--body-quote-author">
+                    Gheorghe Hagi
+                </div>
+            </div>
+            <div class="card__component--reactions-container">
+                <div class="card__component--reaction hot reaction-active">
+                    <span class="reaction">🔥</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+                <div class="card__component--reaction thumbs-up">
+                    <span class="reaction">👍</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+                <div class="card__component--reaction raising-hands">
+                    <span class="reaction">🙌</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+                <div class="card__component--reaction smile">
+                    <span class="reaction">🙂</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__component--header">
+                <div class="card__component--header-profile">
+                    <div class="card__component--header-profile-photo">
+                        <img class="img-responsive" src="ui/images/house.png" />
+                    </div>
+                    <div class="card__component--header-profile-name">John Doe</div>
+                </div>
+                <div class="card__component--header-menu">...</div>
+            </div>
+            <div class="card__component--body">
+                <div class="card__component--body-quote-mark">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <div class="card__component--body-quote-text">
+                    Whether you’re 9 or 90, stop trying to fix the things you’re bad at, and focus on the things you’re good at.
+                </div>
+                <div class="card__component--body-quote-author">
+                    Gheorghe Hagi
+                </div>
+            </div>
+            <div class="card__component--reactions-container">
+                <div class="card__component--reaction hot reaction-active">
+                    <span class="reaction">🔥</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+                <div class="card__component--reaction thumbs-up">
+                    <span class="reaction">👍</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+                <div class="card__component--reaction raising-hands">
+                    <span class="reaction">🙌</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+                <div class="card__component--reaction smile">
+                    <span class="reaction">🙂</span>
+                    <span class="reaction-counter">0</span>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 <script type="text/javascript" src="ui/js/vendor.js"></script>

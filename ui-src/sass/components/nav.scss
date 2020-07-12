@@ -1,7 +1,5 @@
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     height: 100%;
     width: 200px;
     background-color: black;
@@ -19,6 +17,9 @@ nav {
     -o-animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
     animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
     @media (max-width: 768px) {
+        // position: fixed;
+        // top: 0;
+        // left: 0;
         width: 100%;
         height: auto;
         flex-direction: column;
@@ -175,7 +176,7 @@ nav {
     @media (max-width: 768px) {
         display: flex !important;
         flex-direction: row;
-    
+
         .new-post {
             font-size: 50px;
             background-color: black;
