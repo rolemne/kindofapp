@@ -137,6 +137,7 @@ nav {
     margin: auto 3vw;
     font-size: 3vw;
     border-radius: 10px;
+    -webkit-tap-highlight-color: transparent;
     -webkit-transition: color 200ms linear, background-color 200ms linear;
     -moz-transition: color 200ms linear, background-color 200ms linear;
     -o-transition: color 200ms linear, background-color 200ms linear;
