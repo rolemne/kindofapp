@@ -35,7 +35,7 @@
     width: 60%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1250px) {
   .card {
     width: 80%;
   }
@@ -113,9 +113,9 @@
   background-color: #f5f5f5;
   width: 15%;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 800;
-  margin: 15px 30px;
+  margin: 15px;
   -moz-box-shadow: 0px 2px 3px 1px gray;
   -webkit-box-shadow: 0px 2px 3px 1px gray;
   box-shadow: 0px 2px 3px 1px gray;
@@ -127,14 +127,28 @@
   -o-transition: color 200ms linear, background-color 200ms linear;
   transition: color 200ms linear, background-color 200ms linear;
 }
-@media (max-width: 768px) {
+@media (max-width: 858px) {
   .card__component--reaction {
-    margin: 10px auto;
+    margin: 10px;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 650px) {
+  .card__component--reaction {
+    margin: 10px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
   .card__component--reaction {
     margin: 10px 5px;
+  }
+}
+@media (max-width: 375px) {
+  .card__component--reaction {
+    font-size: 14px;
   }
 }
 .card__component--reaction:hover {
@@ -144,12 +158,12 @@
 .reaction,
 .reaction-counter {
   display: block;
-  margin: 1vw;
+  margin: 10px;
 }
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .reaction,
 .reaction-counter {
-    font-size: 14px;
+    margin: 5px;
   }
 }
 
@@ -415,13 +429,6 @@ nav {
     margin: 0;
     overflow: hidden;
   }
-}
-
-.fixed-top-left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0;
 }
 
 .img-responsive {
