@@ -6,6 +6,8 @@ nav {
     width: 200px;
     background-color: black;
     box-shadow: 0px 0px 3px 2px gray;
+    -moz-box-shadow: 0px 0px 3px 2px gray;
+    -webkit-box-shadow: 0px 0px 3px 2px gray;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,12 +15,17 @@ nav {
     color: white;
     overflow: hidden;
     animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
     @media (max-width: 768px) {
         width: 100%;
         height: auto;
         flex-direction: column;
         animation: none;
         box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
     }
 }
 
@@ -97,6 +104,9 @@ nav {
                     font-size: 3vw;
                     border-radius: 10px;
                     transition: color .2s linear, background-color .2s linear;
+                    -webkit-transition: color .2s linear, background-color .2s linear;
+                    -moz-transition: color .2s linear, background-color .2s linear;
+                    -o-transition: color .2s linear, background-color .2s linear;
                 }
                 @media (max-width: 425px) {
                     font-size: 15px;
