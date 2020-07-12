@@ -213,6 +213,22 @@ nav {
   .user-responsive .nav__component--user-profile-picture {
     margin-left: 20px;
   }
+  .user-responsive .new-post {
+    font-size: 35px;
+    background-color: black;
+    color: white;
+    border: 2px solid white !important;
+    border-radius: 50px;
+    padding: 2px 12px 4.8px 12px;
+    text-align: center;
+  }
+  .user-responsive .new-post:focus {
+    outline: none;
+  }
+  .user-responsive .new-post:active {
+    color: rgba(189, 185, 185, 0.9);
+    border: 2px solid rgba(189, 185, 185, 0.9) !important;
+  }
 }
 
 @keyframes fade-in-right {
