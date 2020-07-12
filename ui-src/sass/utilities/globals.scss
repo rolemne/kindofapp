@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     @media (min-width: 769px) {
         display: flex;
         height: 100vh;
@@ -12,4 +11,5 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    opacity: 0;
 }

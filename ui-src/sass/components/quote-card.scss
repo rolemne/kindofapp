@@ -15,6 +15,11 @@
     @media (max-width: 1024px) {
         width: 80%;
     }
+    @media (max-width: 768px) {
+        &:first-child {
+            margin-top: 170px;
+        } 
+    }
     @media (max-width: 550px) {
         width: 90%;
     }
@@ -109,7 +114,7 @@
     display: block;
     margin: 1vw;
     @media (max-width: 425px) {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 

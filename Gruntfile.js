@@ -4,7 +4,6 @@ module.exports = function(grunt) {
             files : {
                 src : [
                     'ui-src/js/change-menu-state.js',
-                    'ui-src/js/fix-nav-on-scroll.js',
                 ],
                 dest : 'ui/js/main.js',
                 options : {

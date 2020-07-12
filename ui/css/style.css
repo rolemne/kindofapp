@@ -40,6 +40,11 @@
     width: 80%;
   }
 }
+@media (max-width: 768px) {
+  .card:first-child {
+    margin-top: 170px;
+  }
+}
 @media (max-width: 550px) {
   .card {
     width: 90%;
@@ -144,7 +149,7 @@
 @media (max-width: 425px) {
   .reaction,
 .reaction-counter {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -171,9 +176,16 @@ nav {
   -moz-animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
   -o-animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
   animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: opacity 200ms linear;
+  -moz-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
 }
 @media (max-width: 768px) {
   nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
     flex-direction: column;
@@ -396,9 +408,6 @@ nav {
   font-family: "Baloo Bhai Bold";
   src: url("../fonts/BalooBhai/BalooBhai2-Bold.ttf");
 }
-body {
-  margin: 0;
-}
 @media (min-width: 769px) {
   body {
     display: flex;
@@ -412,6 +421,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0;
 }
 
 .img-responsive {

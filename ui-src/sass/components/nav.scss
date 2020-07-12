@@ -16,10 +16,14 @@ nav {
     -moz-animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
     -o-animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
     animation: fade-in-right 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
     @media (max-width: 768px) {
-        // position: fixed;
-        // top: 0;
-        // left: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         height: auto;
         flex-direction: column;
