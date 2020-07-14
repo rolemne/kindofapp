@@ -1,22 +1,20 @@
 var QUOTE = QUOTE ? QUOTE : {};
 
 QUOTE.menu = {
+
+    activeMenu: $('.nav__component--menu-submenu.submenu-active'),
+
     changeActiveMenuState: function () {
         let $menus = $('.nav__component--menu-submenu');
-        $menus.on('click', function (event) {
+        $menus.on('click', function(event) {
             var $currentMenu = $(event.currentTarget);
-            QUOTE.menu.removeActiveState($menus, 'submenu-active');
-            $currentMenu.addClass('submenu-active');
-        });
-    },
-
-    removeActiveState: function (obj, className) {
-        obj.each(function () {
-            if ($(this).hasClass(className)) {
-                $(this).removeClass(className);
+            if (!$currentMenu.hasClass('submenu-active')) {
+                QUOTE.menu.activeMenu.removeClass('submenu-active');
+                $currentMenu.addClass('submenu-active');
+                QUOTE.menu.activeMenu = $currentMenu;
             }
-        });
-    }
+        })
+    },
 }
 
 $(document).ready(function () {
