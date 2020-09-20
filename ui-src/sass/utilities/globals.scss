@@ -1,9 +1,17 @@
 body {
     @media (min-width: 769px) {
         display: flex;
-        height: 100vh;
+        min-height: 100% !important;
+        height: 100%;
         margin: 0;
         overflow: hidden;
+    }
+}
+
+html {
+    @media (min-width: 769px) {
+        min-height: 100% !important;
+        height: 100%;
     }
 }
 

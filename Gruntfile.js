@@ -5,7 +5,7 @@ module.exports = function(grunt) {
                 src : [
                     'ui-src/js/change-menu-state.js',
                 ],
-                dest : 'ui/js/main.js',
+                dest : 'public/js/main.js',
                 options : {
                     interrupt: true,
                     separator : '\n\n',
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
                 src : [
                     'node_modules/jquery/dist/jquery.min.js'
                 ],
-                dest : 'ui/js/vendor.js',
+                dest : 'public/js/vendor.js',
                 options : {
                     interrupt: true,
                     separator : '\n\n',
@@ -27,14 +27,14 @@ module.exports = function(grunt) {
                 src : [
                     'ui-src/sass/style.scss'
                 ],
-                dest : 'ui/css/style.css'
+                dest : 'public/css/style.css'
             },
 
             vendor : {
                 src : [
                     'ui-src/sass/vendor.scss'
                 ],
-                dest : 'ui/css/vendor.css'
+                dest : 'public/css/vendor.css'
             }
         },
         
